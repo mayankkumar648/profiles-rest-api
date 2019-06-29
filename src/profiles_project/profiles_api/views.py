@@ -16,17 +16,6 @@ from . import models
 from . import permissions
 
 
-# Create your views here.
-class PhoneNumberValidation(APIView):
-    """Validating Phone numbers."""
-
-    def get(self, request, format=None):
-        """Returns a list of APIView features."""
-
-
-        return Response({'phone':'111','message':'messssasd'})
-
-
 class HelloApiView(APIView):
     """Test API View"""
 

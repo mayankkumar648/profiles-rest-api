@@ -17,14 +17,17 @@ from . import permissions
 
 
 # Create your views here.
+class PhoneNumberValidation(APIView):
+    """Validating Phone numbers."""
+
+    return Response({'phone':''})
+
+
+
 class HelloApiView(APIView):
     """Test API View"""
 
     serializer_class = serializers.HelloSerializer
-
-
-
-
 
     def get(self, request, format=None):
         """Returns a list of APIView features."""

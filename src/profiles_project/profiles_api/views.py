@@ -20,8 +20,12 @@ from . import permissions
 class PhoneNumberValidation(APIView):
     """Validating Phone numbers."""
 
-    return Response({'phone':''})
+        serializer_class = serializers.PhoneSerializer
 
+    def get(self, request, format=None):
+        """Returns a list of APIView features."""
+
+        return Response({'phone':''})
 
 
 class HelloApiView(APIView):

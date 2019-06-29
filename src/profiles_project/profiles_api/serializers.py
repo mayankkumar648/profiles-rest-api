@@ -3,12 +3,6 @@ from rest_framework import serializers
 from . import models
 
 
-class PhoneSerializer(serializers.Serializer):
-    """Serializes a phone field for testing our APIView."""
-
-    phone = serializers.CharField(max_length=10)
-
-
 class HelloSerializer(serializers.Serializer):
     """Serializes a name field for testing our APIView."""
 
